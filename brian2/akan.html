@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>AKAN NAMES</title>
+    <script src="/home/brian/brian2/akan.js"></script>
+  
+<html>
+  <h1>AKAN NAMES</h1>  
+<p>Akan names are derived from Ghanian Culture.Frequently in Ghana, children are
+   given their first names as 'day name'which corresponds to the day on the week 
+   they were born.
+   Most people do not know their birthdays are, but some do not know what day of the 
+   week they were born.luckily for us, there are ways to calculate the day of the 
+   week from a specific date . 
+   Please write the century(CC),year(YY),month(MM,date(DD) to get your akan name.</p>
+   <body> 
+ <img src="/home/brian/brian2/99131d83e4933eafc477008a7b82e89c.jpg" width="500" height="540">
+ <img src="/home/brian/brian2/images.jpg" width="550" height="500">
+ <form method="post" action="#" onsubmit="checkforblank()">
+   <table>
+     <tr>
+       <td>
+         Name:
+       </td>
+       <td>
+         <input type="text" id="Name" placeholder="Name" name="">
+       </td>
+     </tr>
+     <tr>
+       <td>
+         Year :
+       </td>
+       <td>
+         <input type="text" id="year" placeholder="Year" min="1900" max="2030">
+       </td>
+     </tr>
+     <tr>
+       <td>
+         Gender
+       </td>
+       <td>
+         <input type="checkbox" id="Male" name="Gender">Male
+         <input type="checkbox" ID="Female" name="Gender">Female
+       </td>
+      </tr>
+        <tr>
+           <td>
+           Month:
+           </td>
+         <td>
+           <input type="text"  id="month" placeholder="month" required=Month> 
+         </td>
+        </tr>
+        <tr>
+          <td>
+            Day:
+          </td>
+          <td>
+            <input type="text" id="day" placeholder="Day" min="01" max="31" required=Day>
+          </td>
+     <tr>
+       <td>
+         <button type="button"  placeholder="submit" onclick="getAkanName()">submit</button>
+       </td>
+     </tr>
+   </table>
+ </form>
+ <script>
+
+<div class="radio radio-default">
+  <label for ="Name">Name</label>
+  <input text="radio" id="Name" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <form class="form" onsubmit="getAkanName()">
+     <label for="date" class="input-group">Date of Birth:</label> 
+  <input type="date" class="form-control mb-2 mr-sm-2" placeholder="mm/dd/yyyy" id="myBirthDate" name="date" autocomplete="off">
+  </div>
+  <label class="label">Gender</label>
+  <div class="radio radio-default">
+    <input type="radio" name="gender" value="Female" id="Female">
+    <label for ="Female">Female</label>
+    </div>
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary mb-2" onclick="getAkanName()">submit<button>
+      <div class="output">
+        <p id="message"></p>
+        </div>
+        </div>
+        </div>
+
+        <script src="js/akan.js"></script>
+   </body>
+</html> 
